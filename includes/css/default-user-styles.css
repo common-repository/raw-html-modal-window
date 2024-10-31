@@ -1,0 +1,53 @@
+/* --- An Example of styles you can add to control the layout --- */
+
+
+/* You can control the scrolling of the page underneath the
+ * modal window by overriding the following style: */
+
+.efmw_active {
+	/* Removing the comment tags on the next line will make your page scrollable */
+	/* overflow: visible; */
+}
+
+/* Note: the efmw_active class is appended to the body tag
+ * when the modal window is displayed and removed when closed.
+ */
+
+
+ /* --- The layer underneath the modal window --- */
+#efmw_modalMask {
+	background-color: #AAAAAA;
+}
+
+
+ /* --- Content of modal window --- */
+#efmw_modalContent {
+	color: white;
+	background: #888888 url('wp-content/plugins/raw-html-modal-window/includes/images/demo-background-image.jpg') no-repeat top center / cover;
+
+	/* Note, if you want your modal window to be displayed
+	 * with the a background image on
+	 * more than the home page, specify the full absolute
+	 * path to your image, for example:
+	 *
+	 * https://your-site.com/wp-content/uploads/year/your-background-image.jpg
+	 */
+
+	border:1px solid #AAA;
+	text-align:center;
+	margin: 5% auto;
+	min-height: 300px;
+	width: 95%;
+	height: 80vh;
+}
+
+
+/* --- The "close" link (× character) --- */
+a#efmw_closeModal { 
+    color: white;
+}
+
+
+#efmw_modalContent h2 { 
+    color: white;
+}

@@ -1,0 +1,65 @@
+.efmw_active {
+	overflow: hidden;
+}
+
+
+#efmw_modal,
+#efmw_modalMask {
+	left: 0px;
+	top: 0px;
+	width:100%;
+	height:100%;
+}
+
+#efmw_modalContent,
+#efmw_modalFixedDiv {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+#efmw_modal {
+	position: absolute;
+	opacity: 0;
+	transition: all 1s;
+}
+
+#efmw_modalMask {
+	position: fixed;
+	background-color: #AAA;
+	z-index: 1000;
+}
+
+#efmw_modalFixedDiv {
+	position:fixed;
+	z-index: 9999;
+	width:100%;
+
+	height: 100%;
+}
+
+#efmw_modalContent {
+	position: relative; 
+	/*z-index: 9999;*/ /* Was used in 3-div-structure */
+}
+
+#efmw_closeModal {
+	position: absolute;
+	cursor: pointer;
+	line-height:1;
+	top: 1px;
+	right: 5px;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+} 
+
+#efmw_closeModal:hover {
+	color: #888;
+}
